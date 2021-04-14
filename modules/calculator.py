@@ -1,8 +1,7 @@
 class Calculator():
     def __init__(self, name):
         self.name= name
-        # self.number_2 = number_2
-        # self.operator= operator
+
 
 
     def add_two_numbers(self, number_1,number_2):

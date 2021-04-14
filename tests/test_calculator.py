@@ -13,7 +13,7 @@ class Test_calculator(unittest.TestCase):
     def test_calulator_adding_two_values(self):
         self.assertEqual(7,self.calculator.add_two_numbers(self.number_1, self.number_2))
 
-    def test_calulator_multiplying_two_values(self):
+    def test_calulator_multiply_two_values(self):
         self.assertEqual(12,self.calculator.multiply_two_numbers(self.number_1, self.number_2))
 
     def test_calulator_substraction_two_values(self):
