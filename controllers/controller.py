@@ -1,7 +1,7 @@
 from app import app
 from flask import render_template
 from flask import request
-from modules.simple_calculator import calculator_01
+from model.simple_calculator import calculator_01
 
 
 # Solution_01

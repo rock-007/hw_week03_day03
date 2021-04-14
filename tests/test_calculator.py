@@ -1,6 +1,6 @@
 import unittest
 # from controllers.controller import *
-from modules.calculator import Calculator
+from model.calculator import Calculator
 
 class Test_calculator(unittest.TestCase):
 
