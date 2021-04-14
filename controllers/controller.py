@@ -4,7 +4,7 @@ from flask import request
 from modules.simple_calculator import calculator_01
 
 
-
+# Solution_01
 @app.route('/')
 def index():
     return render_template("index.html")
@@ -31,4 +31,35 @@ def calc():
         result= calculator_01.divide_two_numbers(arg_1,arg_2)
 
     return render_template("result.html",arg_1= arg_1, arg_2= arg_2, arg_3=arg_3, result = result)
+
+# Solution_02
+
+@app.route('/add/<number_01>/<number_02>')
+
+def addCalc(number_01,number_02):
+    result1= calculator_01.add_two_numbers(int(number_01),int(number_02))
+
+
+    return render_template("result.html",number_01= number_01, number_02= number_02, operator="add", result1 = result1)
+
+@app.route('/subtract/<number_01>/<number_02>')
+def subCalc(number_01,number_02):
+    result1= calculator_01.subtract_two_numbers(int(number_01),int(number_02))
+
+
+    return render_template("result.html",number_01= number_01, number_02= number_02, operator="add", result1 = result1)
+
+@app.route('/multiply/<number_01>/<number_02>')
+def mulCalc(number_01,number_02):
+    result1= calculator_01.multiply_two_numbers(int(number_01),int(number_02))
+
+
+    return render_template("result.html",number_01= number_01, number_02= number_02, operator="add", result1 = result1)  
+
+@app.route('/divide/<number_01>/<number_02>')
+def divCalc(number_01,number_02):
+    result1= calculator_01.divide_two_numbers(int(number_01),int(number_02))
+
+
+    return render_template("result.html",number_01= number_01, number_02= number_02, operator="add", result1 = result1)  
 
