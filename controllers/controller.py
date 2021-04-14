@@ -20,7 +20,6 @@ def calc():
         result=0
     
     # query_string= "?arg1={0}&arg2={1}&arg3={2}".format(arg1, arg2, arg3)
-    # print(query_string)
     if arg_3 == "+" :
         result= calculator_01.add_two_numbers(arg_1,arg_2)
     elif arg_3 == "-" :
@@ -35,7 +34,6 @@ def calc():
 # Solution_02
 
 @app.route('/add/<number_01>/<number_02>')
-
 def addCalc(number_01,number_02):
     result1= calculator_01.add_two_numbers(int(number_01),int(number_02))
 
